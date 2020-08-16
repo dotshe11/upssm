@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div>
+        <h3 th:text="'欢迎您：：' + ${session.username}"></h3>
+        <p>
+            你好！
+        </p>
+        <p>注册成功了，3面后跳转到登录页面</p>
+    </div>
+    <script language="JavaScript" type="text/javascript">
+        function Redirect(){
+            window.location = "/loginPage";   //要跳转的页面
+        }
+        setTimeout('Redirect()', 3000);       //第二个参数是时间，单位毫秒
+    </script>
+</head>
+</html>

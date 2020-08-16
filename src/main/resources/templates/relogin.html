@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>login</title>
+</head>
+<body>
+
+<div>
+    <div>密码错误、或者用户不存在。</div>
+    <div>3秒后跳转到首页</div>
+    <script language="JavaScript" type="text/javascript">
+        function Redirect(){
+            window.location = "/";   //要跳转的页面
+        }
+        setTimeout('Redirect()', 3000);       //第二个参数是时间，单位毫秒
+    </script>
+</div>
+</body>
+</html>
